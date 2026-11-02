@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Mic, Send, MapPin, Globe, AlertTriangle, Clock, MicOff, Pause, Lightbulb, CheckCircle, User } from 'lucide-react';
 import { useGeminiLive } from '../hooks/useGeminiLive';
+import { useApp } from '../context/AppContext';
 
 const formatTime = (seconds) => {
   const mins = Math.floor(seconds / 60);
@@ -10,6 +11,7 @@ const formatTime = (seconds) => {
 };
 
 const SSBMentorPage = () => {
+  const { user } = useApp();
   const [messages, setMessages] = useState([
     {
       role: 'agent',
@@ -290,7 +292,14 @@ const SSBMentorPage = () => {
                       </div>
                     </div>
                     {msg.role === 'user' && (
-                       <div className="message-avatar user-avatar"><User size={16} /></div>
+                       <div className="message-avatar user-avatar" style={{ overflow: 'hidden' }}>
+                         <img
+                           src={user?.photo || '/avatar.png'}
+                           alt="You"
+                           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                           onError={(e) => { e.target.onerror = null; e.target.src = '/avatar.png'; }}
+                         />
+                       </div>
                     )}
                   </div>
                 ))}

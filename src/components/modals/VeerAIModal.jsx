@@ -158,7 +158,7 @@ const FormattedMessage = ({ content }) => {
 };
 
 const VeerAIModal = () => {
-  const { isVeerAIOpen, setIsVeerAIOpen } = useApp();
+  const { isVeerAIOpen, setIsVeerAIOpen, user } = useApp();
   const [query, setQuery] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [copiedId, setCopiedId] = useState(null);
@@ -325,8 +325,13 @@ Ask me anything regarding:
               </div>
 
               {message.role === 'user' && (
-                <div className="chat-avatar user">
-                  <span>C</span>
+                <div className="chat-avatar user" style={{ overflow: 'hidden' }}>
+                  <img
+                    src={user?.photo || '/avatar.png'}
+                    alt="Candidate"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    onError={(e) => { e.target.onerror = null; e.target.src = '/avatar.png'; }}
+                  />
                 </div>
               )}
             </div>

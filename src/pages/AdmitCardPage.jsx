@@ -17,7 +17,7 @@ import { useApp } from '../context/AppContext';
 
 const AdmitCardPage = () => {
   const [searchParams] = useSearchParams();
-  const { applications, addToast } = useApp();
+  const { applications, addToast, user } = useApp();
 
   const rollQuery = searchParams.get('roll') || 'TGC141/2026/88921';
   const [rollInput, setRollInput] = useState(rollQuery);
@@ -170,7 +170,7 @@ const AdmitCardPage = () => {
               <div className="admit-photo-signature-block">
                 <div className="photo-box">
                   <img
-                    src="/PHOTO.jpg"
+                    src={user?.photo || '/avatar.png'}
                     alt="Candidate Photograph"
                     className="admit-candidate-photo-img"
                   />

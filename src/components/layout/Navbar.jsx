@@ -229,7 +229,7 @@ const Navbar = () => {
                 >
                   <div className="user-avatar">
                     <img
-                      src={user.photo || '/PHOTO.jpg'}
+                      src={user.photo || '/avatar.png'}
                       alt={user.name}
                       className="nav-avatar-img"
                     />
@@ -243,7 +243,7 @@ const Navbar = () => {
                     <div className="user-info-header">
                       <div className="user-info-avatar-row">
                         <img
-                          src={user.photo || '/PHOTO.jpg'}
+                          src={user.photo || '/avatar.png'}
                           alt={user.name}
                           className="dropdown-avatar-img"
                         />

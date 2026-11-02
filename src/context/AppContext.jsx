@@ -28,9 +28,11 @@ export const AppProvider = ({ children }) => {
           motherName: 'Smt. Sunita Devi',
           address: '14, Rajputana Enclave, Vaishali Nagar, Jaipur, Rajasthan - 302021',
           rollNumber: 'TGC141/2026/88921',
-          candidateId: 'IA26-482913'
+          candidateId: 'IA26-482913',
+          photo: '/avatar.png'
         };
-    return { ...parsed, isLoggedIn: false };
+    const userPhoto = (!parsed.photo || parsed.photo.includes('PHOTO')) ? '/avatar.png' : parsed.photo;
+    return { ...parsed, photo: userPhoto, isLoggedIn: false };
   });
 
   const updateUser = (updatedFields) => {
@@ -124,6 +126,7 @@ export const AppProvider = ({ children }) => {
       email: email || (role === 'officer' ? 'sandeep.varma@nic.in' : 'vikram.sharma@example.com'),
       rollNumber: 'TGC141/2026/88921',
       candidateId: 'IA26-482913',
+      photo: '/avatar.png',
       isLoggedIn: true,
       role
     };

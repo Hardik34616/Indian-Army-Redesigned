@@ -178,7 +178,7 @@ const DashboardPage = () => {
               <div className="cand-hero-left">
                 <div className="cand-avatar-slot">
                   <img
-                    src={user.photo || '/PHOTO.jpg'}
+                    src={user.photo || '/avatar.png'}
                     alt={user.name}
                     className="cand-hero-avatar"
                   />
@@ -782,7 +782,7 @@ const DashboardPage = () => {
                     <h4>DIRECTORATE GENERAL OF RECRUITING</h4>
                     <span>E-ADMIT CARD FOR RECRUITMENT YEAR 2026</span>
                   </div>
-                  <img src={user.photo || '/PHOTO.jpg'} alt="Candidate" width="60" height="72" className="admit-cand-img" />
+                  <img src={user.photo || '/avatar.png'} alt="Candidate" width="60" height="72" className="admit-cand-img" />
                 </div>
 
                 <div className="admit-grid-fields">

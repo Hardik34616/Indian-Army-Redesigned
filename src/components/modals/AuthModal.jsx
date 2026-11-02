@@ -188,7 +188,7 @@ const AuthModal = () => {
               {tab === 'candidate' && (
                 <div className="candidate-login-photo-card">
                   <img
-                    src="/PHOTO.jpg"
+                    src="/avatar.png"
                     alt="Registered Candidate"
                     className="login-candidate-thumb"
                   />

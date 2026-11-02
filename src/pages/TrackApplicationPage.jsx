@@ -121,7 +121,7 @@ const TrackApplicationPage = () => {
             <div className="tracker-card-header">
               <div className="tracker-header-left">
                 <img
-                  src="/PHOTO.jpg"
+                  src="/avatar.png"
                   alt={selectedApp.candidateName}
                   className="tracker-candidate-photo"
                 />

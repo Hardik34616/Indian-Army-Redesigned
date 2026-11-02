@@ -70,7 +70,7 @@ const ApplyPage = () => {
       secondChoiceCity: 'Chandigarh'
     },
     documents: {
-      photoName: 'passport_photo_vikram.jpg',
+      photoName: 'avatar.png',
       signatureName: 'signature_vikram.jpg',
       matricCertName: 'class_10th_marksheet.pdf',
       degreeCertName: 'btech_provisional_degree.pdf'
@@ -514,16 +514,16 @@ const ApplyPage = () => {
                 <div className="doc-upload-box">
                   <div className="doc-photo-preview-wrap">
                     <img
-                      src="/PHOTO.jpg"
+                      src="/avatar.png"
                       alt="Candidate Passport Photo"
                       className="doc-uploaded-thumb"
                     />
                   </div>
                   <h4>Recent Passport Photograph</h4>
-                  <span className="doc-format">JPG/JPEG format (20 KB - 50 KB)</span>
+                  <span className="doc-format">JPG/PNG format (20 KB - 50 KB)</span>
                   <div className="doc-preview-chip">
                     <CheckCircle2 size={14} className="chip-chk" />
-                    <span>PHOTO_UNDER_20KB.jpg (Uploaded)</span>
+                    <span>avatar.png (Uploaded)</span>
                   </div>
                 </div>
 
@@ -716,7 +716,7 @@ const ApplyPage = () => {
 
                   <div className="slip-photo-frame">
                     <img
-                      src="/PHOTO.jpg"
+                      src="/avatar.png"
                       alt="Verified Candidate"
                       className="slip-photo-img"
                     />

@@ -426,7 +426,7 @@ const LoginPage = () => {
               {/* Candidate Quick Profile Card */}
               <div className="login-profile-card">
                 <img
-                  src="/PHOTO.jpg"
+                  src="/avatar.png"
                   alt="Hardik Yash Raj"
                   className="profile-avatar-img"
                   width="48"
@@ -552,7 +552,7 @@ const LoginPage = () => {
               {/* Officer Candidate Profile Card */}
               <div className="login-profile-card">
                 <img
-                  src="/PHOTO.jpg"
+                  src="/avatar.png"
                   alt="Major Sandeep Varma"
                   className="profile-avatar-img"
                   width="48"
