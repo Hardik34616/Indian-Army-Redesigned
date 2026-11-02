@@ -1,0 +1,1580 @@
+/* Mobile-only layout safeguards. Desktop styles intentionally remain unchanged. */
+
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #root,
+  .app-root-container,
+  .app-main-content,
+  .homepage-wrapper {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .section-header,
+  .section-header-center,
+  .section-header-flex,
+  .notices-header,
+  .calendar-header-flex,
+  .opportunities-header,
+  .army-info-section-heading,
+  .service-awards-heading,
+  .life-section-heading,
+  .opx-section-heading {
+    gap: 16px !important;
+  }
+
+  .section-title,
+  .page-hero-title,
+  .calendar-hero-title,
+  .wizard-hero-title,
+  .help-hero-title,
+  .results-hero-title,
+  .track-hero-title,
+  .apply-hero-title,
+  .admit-hero-title {
+    font-size: clamp(1.9rem, 9vw, 2.55rem) !important;
+    line-height: 1.08 !important;
+    overflow-wrap: anywhere;
+  }
+
+  .section-subtitle,
+  .page-hero-sub,
+  .calendar-hero-sub,
+  .wizard-hero-subtitle,
+  .help-hero-sub,
+  .results-hero-sub,
+  .track-hero-sub,
+  .apply-hero-sub,
+  .admit-hero-sub {
+    max-width: 100% !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .btn {
+    min-height: 44px;
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  input,
+  select,
+  textarea,
+  button,
+  a {
+    max-width: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    min-width: 0;
+  }
+
+  /* Utility bars and primary navigation */
+  .accessibility-bar .container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .a11y-inner {
+    min-height: 38px;
+    padding: 5px 0 !important;
+  }
+
+  .a11y-right {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 6px !important;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .a11y-right::-webkit-scrollbar {
+    display: none;
+  }
+
+  .a11y-divider {
+    display: none;
+  }
+
+  .font-btn {
+    min-width: 30px;
+    min-height: 30px;
+    padding: 5px 7px !important;
+  }
+
+  .a11y-icon-btn {
+    min-width: 34px;
+    min-height: 34px;
+  }
+
+  .a11y-lang-selector {
+    min-height: 34px;
+    padding: 0 3px;
+  }
+
+  .a11y-lang-selector select {
+    min-height: 30px;
+    font-size: 0.7rem;
+  }
+
+  .disclaimer-banner {
+    padding: 9px 0 !important;
+  }
+
+  .disclaimer-inner,
+  .disclaimer-content {
+    align-items: flex-start;
+  }
+
+  .disclaimer-content {
+    gap: 7px !important;
+    font-size: 0.68rem;
+    line-height: 1.45;
+  }
+
+  .disclaimer-close-btn {
+    min-width: 30px;
+    min-height: 30px;
+    flex: 0 0 30px;
+  }
+
+  .navbar-container .container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .nav-inner {
+    height: 64px !important;
+    gap: 7px !important;
+  }
+
+  .brand-logo {
+    min-width: 0;
+    gap: 7px !important;
+  }
+
+  .emblem-img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand-text {
+    min-width: 0;
+  }
+
+  .brand-title {
+    font-size: 0.87rem !important;
+    letter-spacing: 0 !important;
+    white-space: nowrap;
+  }
+
+  .brand-subtitle {
+    font-size: 0.56rem !important;
+    letter-spacing: 0.05em !important;
+    white-space: nowrap;
+  }
+
+  .nav-actions {
+    flex: 0 0 auto;
+    gap: 3px !important;
+  }
+
+  .search-btn,
+  .mobile-toggle-btn {
+    width: 38px;
+    min-width: 38px;
+    min-height: 38px;
+    justify-content: center;
+  }
+
+  .login-register-btn {
+    min-height: 38px;
+    padding: 8px !important;
+  }
+
+  .login-register-btn span {
+    display: none;
+  }
+
+  .mobile-drawer {
+    max-height: calc(100svh - 64px);
+    overflow-y: auto;
+    padding: 12px 16px 22px !important;
+  }
+
+  .mobile-drawer-content {
+    gap: 3px !important;
+  }
+
+  .mobile-link {
+    padding: 12px 4px !important;
+    font-size: 0.9rem !important;
+    line-height: 1.35;
+  }
+
+  .mobile-link.sub {
+    padding-left: 16px !important;
+    font-size: 0.84rem !important;
+  }
+
+  .mobile-auth-actions {
+    margin-top: 14px !important;
+  }
+
+  /* Home hero, quick links and immersive sections */
+  .hero-container {
+    min-height: 0 !important;
+    padding: 36px 0 44px !important;
+  }
+
+  .hero-content-relative,
+  .hero-main-layout,
+  .hero-text-column,
+  .academy-content-container,
+  .academy-editorial-col,
+  .life-hero-content-container,
+  .opx-content-relative,
+  .opx-editorial-column {
+    width: 100%;
+    max-width: 100% !important;
+    min-width: 0;
+  }
+
+  .hero-main-title,
+  .academy-hero-title,
+  .life-hero-title,
+  .opx-editorial-column h1 {
+    font-size: clamp(2rem, 10vw, 2.8rem) !important;
+    line-height: 1.06 !important;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-subtext,
+  .academy-hero-desc,
+  .life-hero-desc,
+  .opx-hero-desc {
+    max-width: 100% !important;
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .hero-actions-group,
+  .academy-actions-group,
+  .life-hero-actions,
+  .opx-actions {
+    width: 100%;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+
+  .hero-actions-group .btn,
+  .academy-actions-group .btn,
+  .life-hero-actions .btn,
+  .opx-actions .btn {
+    width: 100%;
+  }
+
+  .hero-ai-assistant,
+  .ai-search-form,
+  .ai-search-frame,
+  .ai-search-surface {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+  }
+
+  .ai-search-prompt {
+    max-width: calc(100% - 68px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .hero-side-dock-container {
+    width: 100% !important;
+    margin-top: 22px !important;
+  }
+
+  .side-dock-panel {
+    width: 100% !important;
+    gap: 0;
+  }
+
+  .side-dock-tab {
+    min-height: 62px;
+    padding: 10px 5px !important;
+  }
+
+  .side-dock-text {
+    font-size: 0.65rem !important;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .popular-links-section {
+    margin-top: -16px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .popular-links-card {
+    width: 100%;
+    padding: 10px !important;
+  }
+
+  .popular-links-header {
+    padding: 4px 6px 9px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .popular-links-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px !important;
+    width: 100%;
+  }
+
+  .popular-link-item {
+    min-width: 0;
+    padding: 10px 6px !important;
+    gap: 7px !important;
+    align-items: flex-start;
+    white-space: normal !important;
+    font-size: 0.71rem !important;
+    line-height: 1.3;
+  }
+
+  .popular-item-title {
+    overflow-wrap: anywhere;
+  }
+
+  .prestigious-academies-section,
+  .life-immersive-slider,
+  .opx-immersive-slider {
+    min-height: 0 !important;
+    padding: 44px 0 112px !important;
+  }
+
+  .prestigious-academies-section .academy-content-container {
+    padding-right: 16px !important;
+  }
+
+  .academy-quick-stats-row,
+  .life-hero-stats,
+  .opx-hero-stats {
+    width: 100%;
+    max-width: 100% !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 9px !important;
+  }
+
+  .academy-quick-stat-card,
+  .opx-stat-card {
+    min-width: 0;
+    padding: 10px !important;
+  }
+
+  .academy-meta-pill,
+  .opx-meta-pill {
+    max-width: 100%;
+    line-height: 1.4;
+  }
+
+  .academy-carousel-controls,
+  .life-carousel-controls,
+  .opx-carousel-controls {
+    right: 16px !important;
+    bottom: 20px !important;
+  }
+
+  .section-header-center,
+  .section-header {
+    margin-bottom: 30px !important;
+  }
+
+  .explore-opportunities-section,
+  .calendar-preview-section,
+  .selection-roadmap-section,
+  .historic-operations-section,
+  .announcements-section,
+  .faq-section {
+    padding-top: 48px !important;
+    padding-bottom: 56px !important;
+  }
+
+  .opportunities-header,
+  .calendar-header-flex,
+  .section-header-flex,
+  .notices-header {
+    align-items: flex-start !important;
+    margin-bottom: 24px !important;
+  }
+
+  .header-title-wrap {
+    width: 100%;
+  }
+
+  .opportunities-grid,
+  .benefits-ribbon,
+  .rally-cards-grid,
+  .operations-masonry-grid,
+  .opx-frames-grid,
+  .life-disciplines-grid,
+  .life-journey-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .opportunity-card,
+  .operation-card,
+  .rally-card,
+  .opx-frame-card,
+  .life-discipline-card,
+  .life-journey-card {
+    min-width: 0;
+  }
+
+  .card-title,
+  .op-title,
+  .rally-category-title {
+    overflow-wrap: anywhere;
+  }
+
+  .view-all-link,
+  .view-all-calendar-btn {
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  .rally-card-footer,
+  .catalog-actions,
+  .detailed-card-footer {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+
+  .apply-rally-btn,
+  .catalog-actions .btn,
+  .detailed-card-footer .btn {
+    width: 100%;
+  }
+
+  .benefit-item {
+    min-width: 0;
+  }
+
+  .zone-filter-pills-bar,
+  .faq-cat-pills,
+  .notices-filter-tabs,
+  .filter-pills,
+  .zones-scroll,
+  .status-chips,
+  .category-filter-chips,
+  .sample-id-chips,
+  .sample-picks-row,
+  .quick-demo-picks {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .zone-filter-pills-bar::-webkit-scrollbar,
+  .faq-cat-pills::-webkit-scrollbar,
+  .notices-filter-tabs::-webkit-scrollbar,
+  .filter-pills::-webkit-scrollbar,
+  .zones-scroll::-webkit-scrollbar,
+  .status-chips::-webkit-scrollbar,
+  .category-filter-chips::-webkit-scrollbar,
+  .sample-id-chips::-webkit-scrollbar,
+  .sample-picks-row::-webkit-scrollbar,
+  .quick-demo-picks::-webkit-scrollbar {
+    display: none;
+  }
+
+  .zone-pill,
+  .faq-pill,
+  .notif-tab,
+  .filter-pill-btn,
+  .zone-filter-chip,
+  .status-filter-chip,
+  .cat-chip,
+  .sample-chip,
+  .sample-pick-btn,
+  .chip-btn {
+    flex: 0 0 auto;
+    min-height: 38px;
+  }
+
+  .selection-roadmap-section .showcase-glass-card,
+  .showcase-glass-card {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding: 18px !important;
+  }
+
+  .showcase-right-col {
+    min-width: 0;
+  }
+
+  .milestone-rail-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .node-label,
+  .node-code {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .notices-card,
+  .faq-controls-bar {
+    width: 100%;
+  }
+
+  .notice-row {
+    gap: 12px !important;
+    padding: 16px 0 !important;
+  }
+
+  .notice-meta {
+    width: 100%;
+  }
+
+  .notice-download-btn {
+    align-self: flex-start;
+  }
+
+  .faq-question-btn {
+    gap: 12px !important;
+    padding: 16px 14px !important;
+  }
+
+  .faq-q-left,
+  .faq-q-text {
+    min-width: 0;
+  }
+
+  .faq-q-text {
+    overflow-wrap: anywhere;
+  }
+
+  /* Shared interior pages */
+  .page-hero-banner,
+  .calendar-hero-banner,
+  .wizard-hero-banner,
+  .help-hero-banner,
+  .results-hero-banner,
+  .track-hero-banner,
+  .apply-hero-banner,
+  .admit-hero-banner {
+    padding: 42px 0 34px !important;
+  }
+
+  .main-content-layout,
+  .calendar-main-layout,
+  .wizard-container,
+  .help-main-layout,
+  .results-main-layout,
+  .track-main-container,
+  .apply-main-container,
+  .admit-main-container,
+  .detail-main-container,
+  .life-article-shell,
+  .opx-article-shell {
+    width: 100%;
+    max-width: 100% !important;
+    padding-top: 28px !important;
+    padding-bottom: 52px !important;
+  }
+
+  .opp-content-relative,
+  .calendar-content-relative,
+  .find-entry-content-relative,
+  .help-content-relative,
+  .results-content-relative,
+  .track-content-relative,
+  .apply-content-relative,
+  .admit-content-relative,
+  .opp-detail-content-relative,
+  .medical-page .opp-detail-content-relative {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .catalog-filters-bar,
+  .calendar-filter-card,
+  .wizard-card-box,
+  .help-section-card,
+  .roll-checker-card,
+  .track-search-card,
+  .apply-form-card,
+  .admit-search-card,
+  .detail-tab-content-card,
+  .medical-page .detail-tab-content-card {
+    width: 100%;
+    padding: 20px 16px !important;
+    border-radius: var(--radius-md);
+  }
+
+  .catalog-filters-bar,
+  .filter-group,
+  .filter-row-item,
+  .checker-header,
+  .lists-header-flex,
+  .wizard-controls-bar,
+  .medical-pane-heading,
+  .medical-form-actions,
+  .form-extra-row {
+    align-items: stretch !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .filter-select,
+  .checker-form,
+  .tracker-input,
+  .admit-search-input {
+    width: 100% !important;
+  }
+
+  .checker-form,
+  .track-search-form,
+  .admit-search-form,
+  .search-bar-row,
+  .grievance-form {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+
+  .checker-form .btn,
+  .track-search-form .btn,
+  .admit-search-form .btn,
+  .search-bar-row .btn,
+  .grievance-form .btn,
+  .next-btn-right,
+  .medical-submit-btn {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .opportunities-catalog-grid,
+  .rallies-detailed-grid,
+  .help-grid-layout,
+  .medical-checklist-grid,
+  .medical-reference-strip,
+  .medical-chart-controls,
+  .choice-buttons-row,
+  .career-interests-grid,
+  .dob-calculator-wrap,
+  .form-grid-2,
+  .form-grid-3,
+  .form-grid-4,
+  .medical-form-grid,
+  .medical-form-grid-4,
+  .review-table-grid,
+  .documents-upload-grid,
+  .slip-meta-grid,
+  .profile-details-grid,
+  .form-2col-grid {
+    grid-template-columns: 1fr !important;
+    min-width: 0;
+  }
+
+  .catalog-card,
+  .detailed-rally-card,
+  .zro-item-card,
+  .medical-checklist-card,
+  .doc-upload-box {
+    min-width: 0;
+  }
+
+  .catalog-body,
+  .detailed-rally-card,
+  .help-section-card {
+    overflow-wrap: anywhere;
+  }
+
+  .catalog-img-box {
+    height: 210px !important;
+  }
+
+  .detailed-card-top,
+  .tracker-card-header,
+  .tracker-header-left,
+  .admit-govt-header,
+  .slip-header,
+  .success-actions-row {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .tracker-header-left,
+  .admit-govt-header {
+    width: 100%;
+  }
+
+  .tracker-header-sub {
+    flex-wrap: wrap;
+    gap: 6px !important;
+    overflow-wrap: anywhere;
+  }
+
+  .command-architecture-flow,
+  .command-capability-grid,
+  .command-grid,
+  .corps-grid,
+  .values-grid,
+  .award-ladder,
+  .service-awards-grid,
+  .command-network {
+    grid-template-columns: 1fr !important;
+  }
+
+  .army-info-hero,
+  .army-info-hero-content,
+  .command-structure-page .army-info-hero,
+  .command-structure-page .army-info-hero-content,
+  .values-ethics-page .army-info-hero,
+  .values-ethics-page .army-info-hero-content {
+    min-height: 0 !important;
+  }
+
+  .army-info-hero-content,
+  .command-structure-page .army-info-hero-content {
+    padding-top: 30px !important;
+    padding-bottom: 48px !important;
+  }
+
+  .army-info-hero-copy,
+  .command-structure-page .army-info-hero-copy,
+  .values-ethics-page .army-info-hero-copy {
+    width: 100%;
+    max-width: 100% !important;
+    margin-top: 34px !important;
+  }
+
+  .army-info-hero h1,
+  .command-structure-page .army-info-hero h1,
+  .values-ethics-page .army-info-hero h1 {
+    font-size: clamp(2.25rem, 10vw, 3rem) !important;
+  }
+
+  .army-info-section,
+  .command-structure-page .army-info-section,
+  .values-ethics-page .army-info-section {
+    padding: 56px 0 !important;
+  }
+
+  .army-info-section-heading,
+  .army-info-dark-grid,
+  .command-structure-page .army-info-section-heading,
+  .values-ethics-page .army-info-section-heading {
+    display: block !important;
+    margin-bottom: 28px !important;
+  }
+
+  .army-info-section-heading > p,
+  .command-structure-page .army-info-section-heading > p,
+  .values-ethics-page .army-info-section-heading > p {
+    margin-top: 14px !important;
+  }
+
+  .gallantry-spotlight {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .gallantry-spotlight-image,
+  .gallantry-spotlight-image img {
+    height: 320px !important;
+    min-height: 320px !important;
+  }
+
+  .gallantry-spotlight-copy {
+    min-height: 0 !important;
+    padding: 30px 20px 24px !important;
+  }
+
+  .gallantry-winner-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gallantry-winner-card {
+    min-height: 70px;
+  }
+
+  .command-map-panel,
+  .command-spotlight {
+    min-height: 0 !important;
+    padding: 18px !important;
+  }
+
+  .command-map-stage {
+    min-height: 430px !important;
+  }
+
+  .command-map-canvas {
+    width: 100% !important;
+  }
+
+  .command-marker-label {
+    max-width: 112px;
+    white-space: normal !important;
+  }
+
+  .command-marker-label strong,
+  .command-marker-label small {
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+  }
+
+  .command-spotlight {
+    padding: 28px 20px !important;
+  }
+
+  .command-spotlight-top,
+  .command-structure-page .army-info-callout {
+    align-items: flex-start !important;
+    gap: 14px !important;
+  }
+
+  .command-detail-list > div {
+    grid-template-columns: 80px minmax(0, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .command-structure-page .army-info-callout,
+  .army-info-callout {
+    grid-template-columns: auto minmax(0, 1fr) !important;
+  }
+
+  .army-info-primary-link,
+  .command-structure-page .army-info-primary-link {
+    grid-column: 2;
+    width: 100%;
+    margin-left: 0 !important;
+    justify-self: stretch !important;
+  }
+
+  /* Slider/article pages */
+  .life-article-intro,
+  .opx-article-intro {
+    max-width: 100%;
+    margin-bottom: 38px !important;
+  }
+
+  .life-feature-layout,
+  .opx-feature-layout,
+  .life-reference-panel,
+  .opx-reference-panel {
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
+  }
+
+  .life-feature-image-wrap,
+  .life-feature-image-wrap img,
+  .opx-feature-image,
+  .opx-feature-image img {
+    min-height: 300px !important;
+  }
+
+  .life-discipline-card,
+  .opx-frame-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  .life-discipline-image,
+  .opx-frame-image {
+    min-height: 190px !important;
+    max-height: 190px !important;
+  }
+
+  .life-reference-panel,
+  .opx-reference-panel {
+    padding: 20px 16px !important;
+  }
+
+  .life-experience-page .detail-bottom-cta,
+  .opx-bottom-cta,
+  .medical-page .detail-bottom-cta {
+    align-items: stretch !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 20px 16px !important;
+  }
+
+  .opx-bottom-actions {
+    width: 100%;
+    align-items: stretch !important;
+    flex-direction: column !important;
+  }
+
+  .opx-bottom-actions .btn,
+  .life-experience-page .detail-bottom-cta .btn,
+  .medical-page .detail-bottom-cta .btn {
+    width: 100%;
+  }
+
+  /* Data tables remain readable through deliberate horizontal scrolling. */
+  .entries-table-card,
+  .medical-chart-table-card,
+  .merit-results-table-wrap,
+  .admit-details-table,
+  .schedule-matrix-box,
+  .review-summary-card,
+  .acknowledgement-slip-card {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .entries-table,
+  .medical-chart-table-card .entries-table,
+  .merit-table,
+  .schedule-matrix-box table {
+    min-width: 620px;
+  }
+
+  .entries-table th,
+  .entries-table td,
+  .merit-table th,
+  .merit-table td {
+    padding: 11px 12px !important;
+  }
+
+  /* Standalone authentication and dialog surfaces */
+  .auth-standalone-page {
+    padding: 24px 0 48px !important;
+  }
+
+  .auth-container,
+  .auth-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .auth-card {
+    padding: 20px 16px !important;
+  }
+
+  .auth-title {
+    font-size: 1.55rem !important;
+    line-height: 1.15;
+  }
+
+  .auth-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .auth-tab {
+    flex: 0 0 auto;
+    min-width: 112px;
+  }
+
+  .modal-backdrop,
+  .search-modal-backdrop,
+  .veer-ai-backdrop {
+    align-items: flex-start !important;
+    overflow-y: auto;
+    padding: 12px !important;
+  }
+
+  .auth-modal-dialog,
+  .status-modal-dialog,
+  .admit-modal-dialog,
+  .paper-modal-dialog,
+  .search-modal-dialog,
+  .veer-ai-dialog {
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: calc(100svh - 24px) !important;
+    margin: 0 auto;
+  }
+
+  .auth-modal-dialog,
+  .status-modal-dialog,
+  .admit-modal-dialog,
+  .paper-modal-dialog,
+  .search-modal-dialog {
+    overflow-y: auto;
+  }
+
+  .auth-header,
+  .modal-header,
+  .search-input-header,
+  .veer-ai-header {
+    padding: 14px 16px !important;
+  }
+
+  .auth-body,
+  .modal-body,
+  .search-results-pane {
+    padding: 18px 16px !important;
+  }
+
+  .auth-footer-notice,
+  .search-modal-footer {
+    padding: 10px 16px !important;
+    align-items: flex-start;
+    line-height: 1.4;
+  }
+
+  .auth-form,
+  .form-row-2,
+  .captcha-row,
+  .candidate-login-photo-card {
+    gap: 12px !important;
+  }
+
+  .form-row-2,
+  .captcha-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .candidate-login-photo-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .demo-helper-box {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 8px;
+  }
+
+  .toast-container {
+    right: 12px !important;
+    bottom: calc(12px + env(safe-area-inset-bottom)) !important;
+    left: 12px;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  .toast-bubble {
+    padding: 11px 12px !important;
+    gap: 9px !important;
+    font-size: 0.76rem !important;
+  }
+
+  .veer-ai-dialog {
+    height: calc(100svh - 24px) !important;
+  }
+
+  .veer-ai-subtitle {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .veer-ai-suggestions {
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    scrollbar-width: none;
+  }
+
+  .veer-ai-suggestions::-webkit-scrollbar {
+    display: none;
+  }
+
+  .suggestion-chip {
+    flex: 0 0 auto;
+  }
+
+  /* Footer rhythm */
+  .anti-fraud-banner {
+    padding: 12px 0 !important;
+  }
+
+  .anti-fraud-inner {
+    gap: 10px !important;
+    font-size: 0.72rem;
+  }
+
+  .footer-main {
+    padding: 38px 0 26px !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .motto-tag {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 3px !important;
+  }
+
+  .govt-network-bar,
+  .footer-bottom-inner,
+  .visitor-meta {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .network-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px !important;
+    width: 100%;
+  }
+
+  .network-links a {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    line-height: 1.35;
+  }
+
+  /* Compact mobile type scale: keep long headings and controls comfortable at narrow widths. */
+  .section-title,
+  .page-hero-title,
+  .calendar-hero-title,
+  .wizard-hero-title,
+  .help-hero-title,
+  .results-hero-title,
+  .track-hero-title,
+  .apply-hero-title,
+  .admit-hero-title {
+    font-size: clamp(1.55rem, 7.4vw, 2.05rem) !important;
+  }
+
+  .hero-main-title,
+  .academy-hero-title,
+  .life-hero-title,
+  .opx-editorial-column h1,
+  .opp-detail-title,
+  .medical-page .opp-detail-title {
+    font-size: clamp(1.7rem, 8.6vw, 2.35rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  .tenders-hero h1,
+  .login-main-title,
+  .auth-title,
+  .cand-name-heading {
+    font-size: clamp(1.45rem, 7.4vw, 2rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  .army-info-hero h1,
+  .command-structure-page .army-info-hero h1,
+  .values-ethics-page .army-info-hero h1 {
+    font-size: clamp(1.85rem, 8.8vw, 2.45rem) !important;
+  }
+
+  .army-info-section h2,
+  .command-structure-page .army-info-section h2,
+  .values-ethics-page .army-info-section h2,
+  .command-spotlight h3,
+  .gallantry-spotlight-copy h3,
+  .life-article-intro h2,
+  .opx-article-intro h2 {
+    font-size: clamp(1.35rem, 7vw, 1.85rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  .life-feature-copy h2,
+  .opx-feature-copy h2,
+  .life-section-heading h2,
+  .opx-section-heading h2,
+  .service-awards-heading h3,
+  .showcase-title {
+    font-size: clamp(1.3rem, 6.8vw, 1.75rem) !important;
+    line-height: 1.14 !important;
+  }
+
+  .pane-title,
+  .step-title,
+  .step-pane-title,
+  .detailed-category-title,
+  .match-entry-title,
+  .modal-heading,
+  .paper-title {
+    font-size: clamp(1.08rem, 5.8vw, 1.5rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  .sub-pane-title,
+  .section-sub-heading,
+  .rules-heading,
+  .eligibility-heading h3,
+  .medical-section-heading h3 {
+    font-size: 0.92rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .values-seal-content > strong {
+    font-size: clamp(1.9rem, 10vw, 2.7rem) !important;
+  }
+
+  .card-title,
+  .op-title,
+  .rally-category-title,
+  .catalog-title,
+  .award-ladder-card h3,
+  .values-pillar-card h3,
+  .command-capability-card h3 {
+    font-size: 1rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .showcase-subtitle,
+  .hero-subtext,
+  .academy-hero-desc,
+  .life-hero-desc,
+  .opx-hero-desc,
+  .army-info-hero-copy > p,
+  .command-structure-page .army-info-hero-copy > p,
+  .values-ethics-page .army-info-hero-copy > p {
+    font-size: 0.84rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .btn,
+  .hero-actions-group .btn,
+  .academy-actions-group .btn,
+  .life-hero-actions .btn,
+  .opx-actions .btn,
+  .view-all-link,
+  .view-all-calendar-btn,
+  .apply-rally-btn,
+  .medical-submit-btn,
+  .army-info-primary-link {
+    min-height: 40px;
+    padding: 9px 13px !important;
+    font-size: 0.78rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .detail-tab-btn,
+  .auth-tab,
+  .filter-pill-btn,
+  .zone-filter-chip,
+  .status-filter-chip,
+  .faq-pill,
+  .notif-tab,
+  .chip-btn,
+  .sample-chip,
+  .sample-pick-btn {
+    min-height: 36px !important;
+    padding: 8px 10px !important;
+    font-size: 0.72rem !important;
+  }
+
+  .portal-home-link,
+  .login-register-btn,
+  .search-btn,
+  .mobile-toggle-btn {
+    font-size: 0.72rem !important;
+  }
+
+  .mobile-link {
+    font-size: 0.84rem !important;
+  }
+
+  .form-label,
+  .field-label,
+  .medical-form-field label,
+  .filter-label,
+  .filter-group label,
+  .input-label {
+    font-size: 0.72rem !important;
+  }
+
+  .form-help,
+  .field-hint,
+  .medical-form-field small,
+  .helper-text,
+  .section-subtitle,
+  .page-hero-sub,
+  .calendar-hero-sub,
+  .wizard-hero-subtitle,
+  .help-hero-sub,
+  .results-hero-sub,
+  .track-hero-sub,
+  .apply-hero-sub,
+  .admit-hero-sub {
+    font-size: 0.82rem !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .section-title,
+  .page-hero-title,
+  .calendar-hero-title,
+  .wizard-hero-title,
+  .help-hero-title,
+  .results-hero-title,
+  .track-hero-title,
+  .apply-hero-title,
+  .admit-hero-title {
+    font-size: 1.45rem !important;
+  }
+
+  .hero-main-title,
+  .academy-hero-title,
+  .life-hero-title,
+  .opx-editorial-column h1,
+  .opp-detail-title,
+  .medical-page .opp-detail-title {
+    font-size: 1.58rem !important;
+  }
+
+  .army-info-hero h1,
+  .command-structure-page .army-info-hero h1,
+  .values-ethics-page .army-info-hero h1 {
+    font-size: 1.72rem !important;
+  }
+
+  .btn,
+  .detail-tab-btn,
+  .auth-tab,
+  .filter-pill-btn,
+  .zone-filter-chip,
+  .status-filter-chip,
+  .faq-pill,
+  .notif-tab,
+  .chip-btn,
+  .sample-chip,
+  .sample-pick-btn {
+    font-size: 0.7rem !important;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  .brand-title {
+    font-size: 0.82rem !important;
+  }
+
+  .a11y-right {
+    justify-content: space-between;
+  }
+
+  .popular-links-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .popular-link-item {
+    align-items: center;
+    min-height: 42px;
+  }
+
+  .network-links {
+    grid-template-columns: 1fr;
+  }
+
+  .army-info-hero-stats,
+  .command-structure-page .army-info-hero-stats,
+  .values-ethics-page .army-info-hero-stats {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .army-info-stat,
+  .army-info-stat:not(:first-child) {
+    padding: 11px 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .army-info-stat:last-child {
+    border-bottom: 0 !important;
+  }
+
+  .opx-hero-stats,
+  .life-hero-stats,
+  .academy-quick-stats-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .command-map-stage {
+    min-height: 360px !important;
+  }
+
+  .command-marker-label {
+    max-width: 90px;
+    padding: 5px !important;
+  }
+
+  .command-marker-label strong {
+    font-size: 0.55rem !important;
+  }
+
+  .command-marker-label small {
+    font-size: 0.5rem !important;
+  }
+}
+
+/* ==========================================================================
+   GLOBAL MOBILE RESPONSIVENESS & SCALING OVERRIDES (USER REQUEST)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Massively scale down font-size everywhere to fit on mobile */
+  :root {
+    --font-base-size: 13px !important;
+  }
+  html, body {
+    font-size: 13px !important;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
+  /* Force all headings and UI text to scale down */
+  h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, label {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* -------------------------------------------------------------
+     FIX: LOGIN PAGE OVERFLOW (1fr 480px issue)
+     ------------------------------------------------------------- */
+  .fullscreen-login-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    min-height: 100vh !important;
+    width: 100% !important;
+    overflow-y: auto !important;
+    position: relative !important;
+  }
+
+  .login-visual-panel {
+    display: none !important; /* Hide visual panel completely to save space on mobile */
+  }
+
+  .login-form-panel {
+    width: 100% !important;
+    max-width: 100vw !important;
+    border-left: none !important;
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+
+  .login-panel-content {
+    padding: 16px 20px 24px !important;
+  }
+
+  .login-top-toolbar {
+    padding: 12px 16px !important;
+  }
+
+  .login-tabs-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 4px !important;
+  }
+
+  .login-nav-tab {
+    flex: 1 1 auto !important;
+    padding: 6px 4px !important;
+    font-size: 0.7rem !important;
+    white-space: normal !important;
+    text-align: center;
+  }
+
+  /* -------------------------------------------------------------
+     FIX: AUTH MODAL TABS AND FORMS
+     ------------------------------------------------------------- */
+  .auth-tabs {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    overflow-x: hidden !important;
+    gap: 4px !important;
+  }
+
+  .auth-tab {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    height: auto !important;
+    padding: 8px 4px !important;
+    font-size: 0.7rem !important;
+    text-align: center;
+  }
+
+  /* Ensure all forms and inputs fit */
+  .auth-form, .tab-pane-form {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .form-row-2, .captcha-row, .captcha-row-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .input-field-wrapper input, .captcha-input-field {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .captcha-code-box {
+    width: 100% !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* Additional aggressive font reduction for specific oversized elements */
+  .auth-title, .login-main-title {
+    font-size: 1.15rem !important;
+  }
+
+  .btn, .btn-primary, .btn-gold, .btn-outline, .btn-demo-autofill {
+    font-size: 0.75rem !important;
+    padding: 8px 12px !important;
+    white-space: normal !important;
+    height: auto !important;
+    line-height: 1.3 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-base-size: 11px !important;
+  }
+  html, body {
+    font-size: 11px !important;
+  }
+
+  /* Make sure horizontal tabs stack entirely on very small screens */
+  .auth-tab, .login-nav-tab {
+    flex: 1 1 100% !important;
+  }
+}
